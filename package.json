@@ -1,0 +1,38 @@
+{
+  "name": "quicklogin",
+  "version": "0.1.0",
+  "description": "A Node.js Module that has login functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "node example/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tritiumNetworks/quickLogin.git"
+  },
+  "keywords": [
+    "node.js",
+    "module",
+    "login",
+    "hash",
+    "password",
+    "crypto"
+  ],
+  "author": "TriNet / PMH",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tritiumNetworks/quickLogin/issues"
+  },
+  "homepage": "https://github.com/tritiumNetworks/quickLogin#readme",
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  },
+  "dependencies": {
+    "js-sha256": "^0.9.0"
+  }
+}
