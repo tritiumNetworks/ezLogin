@@ -16,6 +16,7 @@ class AccountBase {
     }
 
     if (existsSync(this.option.path)) {
+      this.accounts = require(this.option.path)
       readFile(this.option.path, (err1, data) => {
         if (err1) console.error(new Error(err1))
         try { this.accounts = Array.isArray(JSON.parse(data)) ? [] : JSON.parse(data) } catch (err2) { console.error(err2) }
