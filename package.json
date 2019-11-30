@@ -1,5 +1,5 @@
 {
-  "name": "quicklogin",
+  "name": "ezlogin",
   "version": "0.1.0",
   "description": "A Node.js Module that has login functions",
   "main": "index.js",

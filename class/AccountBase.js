@@ -55,6 +55,27 @@ class AccountBase {
     else return 0 // 'Correct!'
   }
 
+  changePW (id, oldpw, newpw) {
+    if (!id || !oldpw || !newpw) return 1 // 'Please Enter your id, old passwd & new passwd'
+    if (!this.accounts) return 2 // 'Account Base is not loading yet'
+
+    const found = this.accounts.filter((a) => a.id === id)
+    if (found.length < 1) return 3 // 'ID is not Correct'
+
+    const salt = found[0].salt
+    const fpw = found[0].pw
+
+    if (sha256(oldpw + salt) !== fpw) return 4 // 'Passwd is not Correct'
+    else {
+      this.accounts.forEach((e, i) => {
+        if (e.id === id) {
+          this.accounts[i] = { id, pw: sha256(newpw + salt), salt }
+        }
+      })
+      return 0 // 'Correct!'
+    }
+  }
+
   break () {
     if (this.accounts && this.option.save) writeFileSync(this.option.path, JSON.stringify(this.accounts))
 
