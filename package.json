@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tritiumNetworks/quickLogin.git"
+    "url": "git+https://github.com/tritiumNetworks/ezLogin.git"
   },
   "keywords": [
     "node.js",
@@ -21,9 +21,9 @@
   "author": "TriNet / PMH",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tritiumNetworks/quickLogin/issues"
+    "url": "https://github.com/tritiumNetworks/ezLogin/issues"
   },
-  "homepage": "https://github.com/tritiumNetworks/quickLogin#readme",
+  "homepage": "https://github.com/tritiumNetworks/ezLogin#readme",
   "devDependencies": {
     "eslint": "^6.6.0",
     "eslint-config-standard": "^14.1.0",
